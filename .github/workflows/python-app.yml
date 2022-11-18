@@ -36,8 +36,4 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest
       run: |
-        apt-get update
-        apt-get install git
-        git clone git@github.com:ManishSMishra/cicd-test.git
-        cd cicd-test
         python3 sample.py
